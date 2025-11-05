@@ -1,0 +1,86 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.about h1 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.tech-stack,
+.features-section {
+  margin-top: 3rem;
+}
+
+.tech-stack h2,
+.features-section h2 {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.tech-stack ul,
+.features-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tech-stack li,
+.features-section li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+  color: #666;
+  line-height: 1.6;
+}
+
+.tech-stack li:last-child,
+.features-section li:last-child {
+  border-bottom: none;
+}
+
+.tech-stack li strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+}
