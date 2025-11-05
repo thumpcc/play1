@@ -4,7 +4,39 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play1 - React App</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Play1 - React App on GitHub Pages</title>
+    <meta name="description" content="A modern React application deployed on GitHub Pages with automated CI/CD using GitHub Actions." />
+    <meta name="keywords" content="React, Vite, GitHub Pages, GitHub Actions, Web App" />
+    <meta name="author" content="thumpcc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thumpcc.github.io/play1/" />
+    <meta property="og:title" content="Play1 - React App on GitHub Pages" />
+    <meta property="og:description" content="A modern React application deployed on GitHub Pages with automated CI/CD using GitHub Actions." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://thumpcc.github.io/play1/" />
+    <meta property="twitter:title" content="Play1 - React App on GitHub Pages" />
+    <meta property="twitter:description" content="A modern React application deployed on GitHub Pages with automated CI/CD using GitHub Actions." />
+
+    <!-- Single Page Apps for GitHub Pages -->
+    <!-- https://github.com/rafgraph/spa-github-pages -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
   <body>
     <div id="root"></div>
